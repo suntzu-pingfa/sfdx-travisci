@@ -22,4 +22,4 @@ script:
 - sfdx force:org:display -u tfujiwara@curious-bear-129343.com
 - sfdx force:source:push -u tfujiwara@curious-bear-129343.com
 - sfdx force:apex:test:run -u tfujiwara@curious-bear-129343.com --wait 10
-- sfdx force:org:delete -u tfujiwara@curious-bear-129343.com -p
+- sfdx force:org:delete -u HubOrg -p
