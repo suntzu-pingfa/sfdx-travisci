@@ -19,7 +19,7 @@ before_install:
   --username $USERNAME --setdefaultdevhubusername -a HubOrg
 script:
 - sfdx force:org:create -v HubOrg -s -f config/project-scratch-def.json -a tfujiwara@curious-bear-129343.com --wait 3
-- sfdx force:org:display -u tfujiwara@curious-bear-129343.com
-- sfdx force:source:push -u tfujiwara@curious-bear-129343.com
-- sfdx force:apex:test:run -u tfujiwara@curious-bear-129343.com --wait 10
-- sfdx force:org:delete -u tfujiwara@curious-bear-129343.com -p
+- sfdx force:org:display -u tfujiwara@example.com
+- sfdx force:source:push -u tfujiwara@example.com
+- sfdx force:apex:test:run -u tfujiwara@example.com --wait 10
+- sfdx force:org:delete -u tfujiwara@example.com -p
